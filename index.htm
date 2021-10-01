@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>Imersão Dev - Aula 01</title>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7c831017e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="topo">
+        <h1>GAME <b>TENTE A SORTE</b></h1>
+        <p>3 Tentativas, um acerto. Está tudo nas suas mãos!</p>
+        <div class="li-01">
+            <div>
+                <h2>Digite um username para começar: </h2>
+                <input type="text" name="mUser" id="muser" placeholder="Username...">
+                <button type="submit" onclick="liberaPage()">INICIAR JOGO</button>
+            </div>
+            <div class="img-personagem">
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/03/Mickey-Tio-Patinhas-PNG-19.png"  alt="Personagem">
+            </div>
+        </div>
+    </section>
+    <section id="corpo" class="corpo">
+        <div>
+            <i class="fas fa-dice-three"></i>
+            <p>São três tentativas, utilizeas sabiamente, pequeno daniel-san!</p>
+        </div>
+        <div>
+            <i class="fas fa-fan"></i>
+            <p>Após as 3 tentativas ou acerto, clique em reset para jogar novamente!</p>
+        </div>
+        <div>
+            <i class="fas fa-gamepad"></i>
+            <p>Divirta-se! E deixe um LIKÃO vai! kkkkk</p>
+        </div>
+    </section>
+    <section id="game" class="game">
+        <div class="vidas">
+            <p>Vidas:</p>
+            <div class="coracoes" id="vidas">
+                <span>&#9829;</span>
+                <span>&#9829;</span>
+                <span>&#9829;</span>
+            </div>            
+        </div>
+        <h1 id="apresentacao"></h1>
+        <div class="li-02">            
+            <div class="content-game">
+                <h2>Digite um valor entre 0 e 10: </h2>
+                <input type="number" name="mChute" id="mchute" placeholder="Chute um número...">
+                <button type="submit" onclick="Chutar()" id="btn-submit">CHUTAR</button>
+                <button type="reset" id="btn-reset" onclick="reset()">RESET</button>
+            </div>
+            <div class="page-resultados">
+                <h1>RESULTADOS</h2>
+                <p id="process"></p>
+                <span id="dica"></span>
+                <h2 id="resultado"></h2>                
+            </div>
+        </div>        
+    </section>
+    <a href="https://denersonpinas.com/" target="_blank">
+    <img src="https://denersonpinas.com/wp-content/uploads/2021/08/cropped-code-150x150.png" alt="" class="alura-logo">
+    </a>
+    <footer>        
+        <h1 class="page-title">
+            Mentalista
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+        <hr class="linha">
+        <p> Desenvolvido por <b>Dênerson Pinas</b></p>
+    </footer>
+</body>
+</html>

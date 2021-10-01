@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap');
+
+
+:root {
+    --bg: ;
+    --text-primary: #e9a401;
+    --primary-gradient: #a47be3;
+    --second-gradient: #5b4cbf;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 600px;
+    font-family: "Montserrat", monospace;    
+    background-color: #fff;
+}
+
+.topo, .game {    
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://themebeyond.com/html/geco/Geco/img/bg/home_four_area_bg.png");
+    background-color: #fff;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.topo h1{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oxanium', cursive;
+    font-size: 61pt;
+}
+
+.topo h1 b {
+    color: var(--text-primary);
+}
+
+.topo p {
+    padding: 0px 0px 30px 0px;
+    margin: 0px;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.li-01{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+}
+
+.li-01 div, .li-02 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li-01 h2, .game h1 {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.li-01 input, .li-02 input {
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    border: solid 2px var(--text-primary);
+    outline: none;
+}
+
+.li-01 button, .li-02 button {
+    width: 100%;
+    padding: 15px 25px 15px 25px;
+    margin: 20px auto auto auto;
+    background-color: var(--text-primary);
+    border: none;
+    border-bottom: solid 5px #b47e00;
+    border-radius: 12px;
+
+}
+
+.img-personagem img{
+    max-width: 200px;
+    max-height: 400px;
+}
+
+#corpo, #game {
+    display: none;
+}
+
+.corpo {
+    width: 60%;
+    padding: 30px;
+    position: absolute;
+    top: 95%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--text-primary);
+    border-radius: 12px;
+    box-shadow: 0 0 1.2em #000;
+}
+
+.corpo div {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corpo div i {
+    font-size: 31pt;
+    padding-right: 10px;
+}
+
+.game {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    background-image: none;
+    color: var(--text-primary);
+}
+
+.game h1{
+    padding: 0px 0px 35px 0px;
+    margin: 0px;
+    font-family: 'Oxanium', cursive;
+    font-size: 41pt;
+}
+
+.li-02{    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.li-02 div {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 .5em #000;
+}
+
+.li-02 #btn-submit {
+    display: block;
+}
+
+.li-02 #btn-reset {
+    display: none;
+}
+
+.vidas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.coracoes {
+    width: 5%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fde2a1;
+    border: solid 2px #e9a401;
+    color: rgb(202, 57, 57);
+}
+
+.content-game {
+    padding-right: 60px;
+}
+
+footer {
+    padding: 15px;
+    margin-top: 50px;
+    flex-shrink: 0;
+    background-color: var(--text-primary);
+    text-align: center;
+    color: #fff;    
+}
+
+.page-resultados {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-title {
+    margin: 0 0 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+footer .linha {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #fde2a1;    
+}
+
+  
+@media (max-height: 500px) {
+    body {
+        min-height: 800px;
+    }
+}
+  
+  
